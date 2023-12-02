@@ -1,0 +1,29 @@
+version: '3.9'
+services:
+  frontend:
+    build: ./front
+    volumes:
+      - pages:/usr/src/page/dist
+  backend:
+    build: ./back
+    env_file:
+      - ./.env.server
+    expose:
+      - '8000'
+      - '8001'
+    volumes:
+      - uploads:/www/uploads
+  nginx:
+    build: ./nginx
+    ports:
+    - '80:80'
+    volumes:
+      - pages:/www/pages
+      - uploads:/www/uploads
+    depends_on:
+    - backend
+    - frontend
+
+volumes:
+  pages:
+  uploads:

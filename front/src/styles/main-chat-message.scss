@@ -1,0 +1,38 @@
+.chat-message-container {
+  display: flex;
+  flex-direction: row;
+  padding: 4px 16px;
+  &:hover {
+    background-color: var(--secondary-bg-color-hover-1);
+  }
+  img {
+    height: 36px;
+    width: 36px;
+    margin-right: 12px;
+  }
+}
+
+.message-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-user {
+  margin-bottom: 12px;
+}
+
+.message-nickname {
+  margin-right: 12px;
+}
+
+.message-created-date {
+  font-size: 0.7rem;
+}
+
+.message-lines {
+  display: flex;
+  flex-direction: column;
+  > span {
+  margin-bottom: 6px;
+  }
+}

@@ -1,0 +1,34 @@
+.profile-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  a:any-link, button {
+    color: var(--main-color);
+    background-color: var(--main-bg-color);
+    text-decoration: none;
+    border: none;
+  }
+  a:hover, button:hover {
+    color: var(--main-color-hover);
+  }
+  > span {
+    display: flex;
+    padding: 8px;
+    button {
+      font-size: 1.6rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.profile-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 8px;
+  img {
+  width: 36px;
+  height: 36px;
+  }
+}

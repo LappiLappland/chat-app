@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "rootDirs": [
+      "src"
+    ],
+    "outDir": "./dist/",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+      "src/types"
+    ],
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "es2020",
+    "target": "es2020",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports" : true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "esModuleInterop" : true,
+    "noEmit": false
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "webpack.*.js",
+    "*.config.js"
+  ]
+}

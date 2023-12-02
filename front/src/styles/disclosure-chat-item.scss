@@ -1,0 +1,17 @@
+.chat-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  img {
+    width: 36px;
+    height: 36px;
+  }
+  &:any-link {
+    color: var(--main-color);
+    background-color: var(--main-bg-color);
+    text-decoration: none;
+  }
+  &:hover {
+    color: var(--main-color-hover);
+  }
+}

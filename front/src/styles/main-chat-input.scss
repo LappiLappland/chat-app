@@ -1,0 +1,50 @@
+.chat-input-container {
+  padding: 8px;
+  color: var(--secondary-color-1);
+  background-color: var(--secondary-bg-color-1);
+  .extra-text {
+    background-color: var(--secondary-bg-color-4);
+    padding: 6px;
+    .loader {
+      width: auto;
+      height: auto;
+      margin-left: 12px;
+    }
+  }
+  .focused-div {
+    outline: solid #3584e4;
+  }
+  > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--secondary-color-2);
+    background-color: var(--secondary-bg-color-2);
+
+    .chat-extra-buttons {
+      > span {
+        padding: 8px;
+      }
+    }
+
+    > textarea {
+      resize: none;
+      flex-grow: 1;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 6px;
+      margin: 0;
+      border: none;
+      background-color: inherit;
+      color: inherit;
+      outline: none;
+    }
+
+  }
+  > span {
+    font-size : 0.7rem;
+    display: flex;
+  }
+}

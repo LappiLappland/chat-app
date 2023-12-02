@@ -1,0 +1,33 @@
+.drag-and-drop {
+  display: flex;
+  input {
+    display: none;
+  }
+  label {
+    position: relative;
+  }
+  label:hover {
+    img {
+      opacity: 50%;
+    }
+  }
+  img {
+    font-size: 0;
+  }
+}
+
+.drag-and-drop-hover {
+  color: rgb(65, 61, 61);
+  background-color: rgba(104, 104, 104, 25%);
+  border-radius: 50%;
+  position: absolute;
+  width: 100%; 
+  height: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  z-index: 2;
+}
